@@ -1,0 +1,10 @@
+li  {
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #c1ff95;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
