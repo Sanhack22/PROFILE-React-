@@ -1,0 +1,13 @@
+.barPages{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.barPages ul{
+    display: flex;
+    justify-content: space-around;
+
+    width: 60%;
+}

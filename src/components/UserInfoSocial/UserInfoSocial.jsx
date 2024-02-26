@@ -3,8 +3,8 @@ import  './UserInfoSocial.css'
 export const UserInfoSocial = ({children}) => {
   return (
 
-   <nav>
-    <ul>{children}</ul>
+   <nav className='barPages'>
+    <ul >{children}</ul>
    </nav>
   )
 }
