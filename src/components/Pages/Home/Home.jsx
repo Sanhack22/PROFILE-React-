@@ -13,6 +13,11 @@ import { ItemPages } from '../../ItemPages/ItemPages'
 import {Main} from '../../Layouts/Main/Main'
 import { TitleSection } from '../../TitleSection/TitleSection';
 import { InformationPerfil } from '../../InformationPerfil/InformationPerfil';
+import {Content} from '../../Content/Content'
+import { Proyects } from '../../Proyects/Proyects';
+import { References } from '../../References/References';
+
+
 
 
 
@@ -50,11 +55,28 @@ export const Home = () => {
                   <InformationPerfil info="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nulla voluptates fugit amet odit cupiditate. Eius aperiam nesciunt provident! Veritatis harum consectetur optio nemo, sit quo omnis doloremque hic quidem." />
                   <TitleSection title='PROYECTOS'/>
+                  <Content>
+                          <Proyects title="Mundo"  description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
+                    Lorem ipsum dolor sit, ame "/>
+                    <Proyects title="Mundo"  description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
+                    Lorem ipsum dolor sit, ame "/>
+                     <Proyects title="Mundo"  description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
+                    Lorem ipsum dolor sit, ame "/>
+                     <Proyects title="Mundo"  description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
+                    Lorem ipsum dolor sit, ame "/>
+                  </Content>
+                  <TitleSection title='REFERENCIAS'/>
 
 
-                  
+                  <Content>
+                          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
+                          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
+                          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
+                          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
 
-                  
+                  </Content>
+                  <TitleSection title='EXPERIENCIA'/>
+
             </Main>
     </>
 
