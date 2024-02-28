@@ -16,6 +16,9 @@ import { InformationPerfil } from '../../InformationPerfil/InformationPerfil';
 import {Content} from '../../Content/Content'
 import { Proyects } from '../../Proyects/Proyects';
 import { References } from '../../References/References';
+import { ItemExperience } from '../../ItemExperience/ItemExperience';
+import mongodb from '../../../assets/mongodb.png'
+
 
 
 
@@ -76,6 +79,11 @@ export const Home = () => {
 
                   </Content>
                   <TitleSection title='EXPERIENCIA'/>
+
+                  <Content>
+                      <ItemExperience image={mongodb} value="20" progress="Intermedio"/>
+                      
+                  </Content>
 
             </Main>
     </>

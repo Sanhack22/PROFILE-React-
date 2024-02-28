@@ -1,0 +1,16 @@
+.itemExperience{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemExperience img{
+    border-radius: 50%;
+    width: 100%;
+
+}
+.barProgress{
+    width: 100%;
+    background-color: brown;
+}
