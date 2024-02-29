@@ -5,3 +5,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+@media(max-width:768px){
+
+        .content{
+            width: 50%;
+        }
+}
+@media(max-width:768px){
+    .content{
+        width: 100%;
+    }
+}

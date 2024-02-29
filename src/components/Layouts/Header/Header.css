@@ -8,4 +8,29 @@ header{
     padding: 1rem;
     position: fixed;
     left: 0;
+    justify-content: space-evenly;
+}
+@media(max-width:920px){
+
+    header{
+        width: 30%;
+     } 
+
+
+
+}
+
+
+
+@media(max-width:768px){
+ header{
+    width: 50%;
+    display:none;
+ } 
+ 
+}
+
+@media(max-width:481px){
+
+    
 }

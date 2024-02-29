@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { BsLinkedin,BsFacebook,BsInstagram,BsTwitter, BsWhatsapp   } from "react-icons/bs";
 
 import './Home.css'
@@ -18,6 +18,12 @@ import { Proyects } from '../../Proyects/Proyects';
 import { References } from '../../References/References';
 import { ItemExperience } from '../../ItemExperience/ItemExperience';
 import mongodb from '../../../assets/mongodb.png'
+import java from '../../../assets/java.png'
+import JS from '../../../assets/JS.png'
+import react from '../../../assets/React.png'
+import { RxHamburgerMenu,RxCross1  } from "react-icons/rx";
+
+
 
 
 
@@ -27,12 +33,21 @@ import mongodb from '../../../assets/mongodb.png'
 
 
 export const Home = () => {
-  return (
+  const [mostrarDiv, setMostrarDiv] = useState(true);
+  
+  const toggleDiv = () => {
+    setMostrarDiv(!mostrarDiv);
+  };
+
+
+   return (
 
     <>
-      <Header>
+      <Header style={{ display: mostrarDiv ? 'block' : 'none' }}>
+              <RxCross1 id='exit'/>
               <ImgPerfil/>
               <Name name='SANTIAGO PEÑA'/>
+              <p></p>
               <NavBar>
                 <Item text='Inicio' />
                 <Item text='Perfil' />
@@ -49,17 +64,16 @@ export const Home = () => {
                     <ItemPages icon={<BsTwitter/>}/>
                     <ItemPages icon={<BsWhatsapp/>}/>
 
-
-
               </UserInfoSocial>
             </Header>
             <Main>
+            <RxHamburgerMenu id='menu' onClick={toggleDiv}/>
                   <TitleSection title='PERFIL'/>
                   <InformationPerfil info="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nulla voluptates fugit amet odit cupiditate. Eius aperiam nesciunt provident! Veritatis harum consectetur optio nemo, sit quo omnis doloremque hic quidem." />
                   <TitleSection title='PROYECTOS'/>
                   <Content>
-                          <Proyects title="Mundo"  description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
+                          <Proyects title="Mundo"  description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus sbnjkal jsbajkls a ksnajks amn sjklnasjab knjsasna ?
                     Lorem ipsum dolor sit, ame "/>
                     <Proyects title="Mundo"  description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
                     Lorem ipsum dolor sit, ame "/>
@@ -81,7 +95,13 @@ export const Home = () => {
                   <TitleSection title='EXPERIENCIA'/>
 
                   <Content>
-                      <ItemExperience image={mongodb} value="20" progress="Intermedio"/>
+                      <ItemExperience image={mongodb} value="50" progress="Intermedio"/>
+                      <ItemExperience image={java} value="50" progress="Intermedio"/>
+                      <ItemExperience image={JS} value="50" progress="Intermedio"/>
+                      <ItemExperience image={react} value="50" progress="Intermedio"/>
+
+
+                      
                       
                   </Content>
 

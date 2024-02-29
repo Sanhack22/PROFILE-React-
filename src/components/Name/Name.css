@@ -18,3 +18,13 @@
     height: 0.3rem; /* grosor del borde */
     background-color: rgb(255, 255, 255); /* color del borde */
 }
+@media(max-width:1279px){
+    .Name{
+        text-align: center;
+    }
+}
+@media(max-width:1279px){
+    .Name{
+        font-size: 1.4rem;
+    }
+}

@@ -11,3 +11,11 @@
 
     width: 60%;
 }
+@media(max-width:1279px){
+    .barPages ul{  
+        width:100%;
+    }
+    .barPages{
+        justify-content: space-around;
+    }
+}

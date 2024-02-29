@@ -4,3 +4,9 @@
     text-align: center;
     padding: 2rem;
 }
+@media(max-width:1279px){
+    .navBar{
+        padding: 1rem;
+    }
+
+}

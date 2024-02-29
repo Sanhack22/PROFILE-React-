@@ -1,8 +1,14 @@
 .imgProfile{
-    width: 65%;
-    height: 30vh;
+    width: 80%;
+    height: 30%;
     border-radius: 50%;
     
     
+}
+@media(max-width:1279px){
+  
+ .imgProfile{
+   width: 100%;
+ }
 }
 
