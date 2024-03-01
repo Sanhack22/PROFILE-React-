@@ -21,6 +21,13 @@
   }
 }
 
+@media(max-width:480px){
+  .imgProfile{
+    width: 50%;
+    height: 25%;
+  }
+}
+
 
 
 
