@@ -24,3 +24,11 @@
 
 
 
+@media(max-height:450px){
+  .imgProfile{
+      width: 60%;
+      height: 30%;
+
+  }
+
+}

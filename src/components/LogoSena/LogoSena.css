@@ -4,3 +4,10 @@
     border-radius: 50%;
     background-color: aliceblue;
 }
+
+@media(max-height:450px){
+    .logoSena{
+        width: 20%;
+    }
+
+}
