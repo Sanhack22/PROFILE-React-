@@ -31,4 +31,11 @@
 
   }
 
+}@media(max-height:300px){
+  .imgProfile{
+    width: 30%;
+    height: 20%;
+
+}
+  
 }
