@@ -14,7 +14,7 @@ li a{
         font-size: 1.2rem;
     }
 }
-@media(max-height:300px){
+@media(max-height:466px){
     li a{
         font-size: 1rem;
 
