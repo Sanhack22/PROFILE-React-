@@ -39,3 +39,10 @@
         width: 20%;
     }
 }
+@media(max-width:480px){
+
+    .itemExperience{
+        width: 30%;
+        padding: 1rem;
+     } 
+}

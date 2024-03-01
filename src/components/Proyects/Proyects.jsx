@@ -1,6 +1,6 @@
 import React from 'react'
 import './Proyects.css'
-import Img  from '../../assets/Solo-Leveling2.jpg'
+import Img  from '../../assets/Libros.jpg'
 export const Proyects = (props) => {
   return (
     <div className='proyect' >
