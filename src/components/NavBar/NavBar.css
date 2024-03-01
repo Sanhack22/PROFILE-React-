@@ -16,7 +16,7 @@
     }
 
 }
-@media(max-height:600px){
+@media(max-height:900px){
     .navBar{
         padding: 0.5rem;
         flex-direction: row;
