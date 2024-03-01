@@ -10,3 +10,9 @@
     }
 
 }
+@media(max-width:920px){
+    .navBar{
+        padding: 0.5rem;
+    }
+
+}
