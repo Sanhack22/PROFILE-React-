@@ -37,3 +37,10 @@ header{
         width: 90%;
      } 
 }
+
+@media(max-height:900px){
+
+    header{
+        justify-content: space-around;
+    }
+}
