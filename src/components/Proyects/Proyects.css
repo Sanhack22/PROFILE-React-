@@ -6,8 +6,8 @@
     padding: 1rem;
     margin: 1rem 0;
     height: 12rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: 0 0.5rem 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .proyect img{
     width: 40%;

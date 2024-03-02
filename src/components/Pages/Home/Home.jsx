@@ -45,45 +45,42 @@ export const Home = () => {
         <ImgPerfil />
         <Name name='SANTIAGO PEÑA' />
         <NavBar>
-          <Item text='Inicio' />
-          <Item text='Perfil' />
-          <Item text='Proyectos' />
-          <Item text='Referencias' />
-          <Item text='Experiencia' />
+          <Item link='#'  text='Inicio' />
+          <Item link='#profile' text='Perfil' />
+          <Item link='#proyects' text='Proyectos' />
+          <Item link='#references' text='Referencias' />
+          <Item link='#expe' text='Experiencia' />
         </NavBar>
         <LogoSena />
         <UserInfoSocial>
-          <ItemPages link={'https://www.google.com/search?q=a&rlz=1C1OKWM_esCO1097CO1097&oq=a&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg9MgYIAhBFGDwyBggDEEUYPDIGCAQQRRg8MgYIBRAFGEAyBggGEAUYQDIGCAcQBRhA0gEHODc5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'} icon={<BsLinkedin />} />
-          <ItemPages icon={<BsFacebook />} />
-          <ItemPages icon={<BsInstagram />} />
+          <ItemPages  icon={<BsLinkedin />} />
+          <ItemPages link={'https://www.facebook.com/santiago.penasanchez.9/'} icon={<BsFacebook />} />
+          <ItemPages link={'https://www.instagram.com/santiago_xyt/?next=%2F'} icon={<BsInstagram />} />
           <ItemPages icon={<BsTwitter />} />
-          <ItemPages icon={<BsWhatsapp />} />
+          <ItemPages link={'https://wa.link/l6qp0q'} icon={<BsWhatsapp />} />
         </UserInfoSocial>
       </Header>
       <Main>  
         <RxHamburgerMenu id='menu' onClick={toggleVisibility} />
-        <TitleSection title='PERFIL' />
-        <InformationPerfil info="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nulla voluptates fugit amet odit cupiditate. Eius aperiam nesciunt provident! Veritatis harum consectetur optio nemo, sit quo omnis doloremque hic quidem." />
-        <TitleSection title='PROYECTOS' />
+        <TitleSection id='profile' title='PERFIL' />
+        <InformationPerfil info="Mi nombre es Santiago Peña, tengo 18 años y vivo en Circasia Qundio.
+        Tengo conocimientos sobre diferentes aspectos de la tecnologia, uno de ellos es la programación, tengo un tecnico en desarrollo de software y actualemnte me encuentro cursando un tecnologo de esa misma rama,
+        mi interes en esta area nace desde el momento en que comprendi un poco el como se pueden construir nuevos proyectos y ayudar a solucionar problemas cotidianos
+        " />
+        <TitleSection id='proyects'title='PROYECTOS' />
         <Content>
-          <Proyects title="Mundo" description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus sbnjkal jsbajkls a ksnajks amn sjklnasjab knjsasna ?
-          Lorem ipsum dolor sit, ame " />
-          <Proyects title="Mundo" description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
-          Lorem ipsum dolor sit, ame " />
-          <Proyects title="Mundo" description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
-          Lorem ipsum dolor sit, ame " />
-          <Proyects title="Mundo" description="Lorem adipisicing elit. Voluptates reprehenderit velit assumenda recusandae iure quibusdam id, illo alias architecto commodi! Rerum, est perspiciatis laborum ullam veniam corporis suscipit maiores voluptatibus?
-          Lorem ipsum dolor sit, ame " />
+          <Proyects title="API REST" description="Una API REST basica, usando TypeScript, conectada una base de datos no relacional en la nube (MongoAtlas)" Img='https://img.freepik.com/free-vector/flat-design-api-illustration_23-2149392284.jpg?t=st=1709412568~exp=1709416168~hmac=085b993d2c12a318adbd0f5090eb6209aa03fe0df8646309cd4d743b7e7f0b68&w=740' url='https://github.com/Sanhack22/API2.git'/>
+          <Proyects title="Bleux" description="Maquetacion de la pagina Bluux, usando HTML y CSS" Img='https://img.freepik.com/free-vector/website-outline-with-globe-grid_78370-4876.jpg?t=st=1709413791~exp=1709417391~hmac=34f6e6ebedbf4f58a343ea0f78257ef9f34c479b6d8dcff602deb663aa76c4eb&w=740' url='https://github.com/Sanhack22/Bleux.git'/>
+          <Proyects title="AppTastico" description="Maquetacion de la pagina AppTastico usando HTML y CSS" Img='https://img.freepik.com/free-vector/website-outline-with-globe-grid_78370-4876.jpg?t=st=1709413791~exp=1709417391~hmac=34f6e6ebedbf4f58a343ea0f78257ef9f34c479b6d8dcff602deb663aa76c4eb&w=740' url='https://github.com/Sanhack22/ApptasticoFinal.git'/>
+          <Proyects Img='https://th.bing.com/th/id/OIP.wEoPGoUAgWhxNz3H77rcEgHaEo?rs=1&pid=ImgDetMain' title="Carrito Compras" description="Proyecto usando JavaScript donde simulamos una tienda de libros, donde podemos agregar y eliminar productos del carrito de compras, alterando su stock" url='https://www.youtube.com/results?search_query=error+de+fps+en+lol+2024'/>
         </Content>
-        <TitleSection title='REFERENCIAS' />
+        <TitleSection id='references' title='REFERENCIAS' />
         <Content>
-          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
-          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
-          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
-          <References name='El Juan' cargo='Barrendero' number='3205677966' email='barrendero@gmail.com' />
+          <References name='Nombre:' cargo='Cargo:' number='Numero:3205677966' email='Email@gmail.com' />
+          <References name='Nombre:' cargo='Cargo:' number='Numero:3205677966' email='Email@gmail.com' />
+
         </Content>
-        <TitleSection title='EXPERIENCIA' />
+        <TitleSection id='expe' title='EXPERIENCIA' />
         <Content>
           <ItemExperience image={mongodb} value="50" progress="Intermedio" />
           <ItemExperience image={java} value="50" progress="Intermedio" />

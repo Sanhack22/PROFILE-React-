@@ -4,7 +4,7 @@ import './Item.css'
 export const Item = (props) => {
   return (
     <li>
-        <a href="">{props.text}</a>
+        <a href={props.link}>{props.text}</a>
     </li>
   )
 }
